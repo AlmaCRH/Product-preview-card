@@ -6,11 +6,14 @@ function App() {
   return (
     <container className="container grid grid-cols-1  mx-auto min-w-100 max-w-144 sm:grid-cols-2 ">
       <div>
-        <img className="rounded-t-lg h-full" src={cardMobile} />
+        <img
+          className="rounded-t-lg  sm:rounded-l-lg md:rounded-l-lg lg:rounded-l-lg xl:rounded-l-lg 2xl:rounded-l-lg h-full"
+          src={cardMobile}
+        />
       </div>
-      <div className="bg-white p-7 rounded-b-lg md:rounded-l-lg xl:rounded-l-lg">
+      <div className="bg-white p-7 rounded-b-lg">
         <div className="text-left">
-          <p className="tracking-[8px] text-grayish-blue font-Montserrat">
+          <p className="tracking-[8px] text-grayish-blue font-Montserrat sm:text-sky-500">
             PERFUME
           </p>
           <h1 className="font-bold text-3xl text-very-dark-blue font-Fraunces">
