@@ -1,19 +1,23 @@
 import "./App.css";
 import cardMobile from "../images/image-product-mobile.jpg";
-import iconCart from '../images/icon-cart.svg'
+import iconCart from "../images/icon-cart.svg";
 
 function App() {
+  const handleClick = () => {
+    return alert("Product added to cart!");
+  };
+
   return (
-    <container className="container grid grid-cols-1  mx-auto min-w-100 max-w-144 sm:grid-cols-2 ">
+    <container className="container grid grid-cols-1 mx-auto min-w-100 max-w-screen-xl sm:grid-cols-2 ">
       <div>
         <img
-          className="rounded-t-lg  sm:rounded-l-lg md:rounded-l-lg lg:rounded-l-lg xl:rounded-l-lg 2xl:rounded-l-lg h-full"
+          className=" max-[639px]:rounded-t-lg h-full sm:rounded-l-lg md:rounded-l-lg lg:rounded-l-lg xl:rounded-l-lg xl2:rounded-l-lg"
           src={cardMobile}
         />
       </div>
-      <div className="bg-white p-7 rounded-b-lg">
+      <div className="bg-white p-7 max-[639px]:rounded-b-lg sm:rounded-r-lg md:rounded-r-lg lg:rounded-r-lg xl:rounded-r-lg xl2:rounded-r-lg ">
         <div className="text-left">
-          <p className="tracking-[8px] text-grayish-blue font-Montserrat sm:text-sky-500">
+          <p className="tracking-[8px] text-grayish-blue font-Montserrat">
             PERFUME
           </p>
           <h1 className="font-bold text-3xl text-very-dark-blue font-Fraunces">
@@ -29,7 +33,10 @@ function App() {
           </div>
         </div>
         <div className="bg-emerald-800 hover:bg-emerald-700 flex justify-center rounded-lg h-11 font-Montserrat ">
-          <button className="w-40 text-white flex justify-center mt-2.5">
+          <button
+            className="w-40 text-white flex justify-center mt-2.5"
+            onClick={handleClick}
+          >
             <img className="text-center h-6 mr-4" src={iconCart} />
             <p className="font-semibold">Add to Cart</p>
           </button>
