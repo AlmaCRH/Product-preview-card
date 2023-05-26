@@ -1,5 +1,5 @@
 import "./App.css";
-import cardMobile from "../images/image-product-mobile.jpg";
+import product from "../images/image-product-mobile.jpg"
 import iconCart from "../images/icon-cart.svg";
 
 function App() {
@@ -14,14 +14,14 @@ function App() {
     >
       <div role="img">
         <img
-          alt="Image of a perfume named Gabrielle from Chanel "
-          className=" max-[639px]:rounded-t-lg h-full sm:rounded-l-lg md:rounded-l-lg lg:rounded-l-lg xl:rounded-l-lg xl2:rounded-l-lg"
-          src={cardMobile}
+          alt="Image of a perfume named Gabrielle from Chanel"
+          className="max-[639px]:rounded-t-lg h-full sm:rounded-l-lg md:rounded-l-lg lg:rounded-l-lg xl:rounded-l-lg xl2:rounded-l-lg object-cover"
+          src={product}
         />
       </div>
       <div
         role="contentinfo"
-        className="bg-white p-7 max-[639px]:rounded-b-lg sm:rounded-r-lg md:rounded-r-lg lg:rounded-r-lg xl:rounded-r-lg xl2:rounded-r-lg "
+        className="bg-white p-7 max-[639px]:rounded-b-lg sm:rounded-r-lg  "
       >
         <div role="article" className="text-left">
           <p className="tracking-[8px] text-grayish-blue font-Montserrat">
