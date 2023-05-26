@@ -8,9 +8,10 @@ function App() {
   };
 
   return (
-    <container className="container grid grid-cols-1 mx-auto min-w-100 max-w-screen-xl sm:grid-cols-2 ">
+    <container role='card' className="container grid grid-cols-1 mx-auto min-w-100 max-w-screen-xl sm:grid-cols-2 ">
       <div>
         <img
+        alt="Image of a perfume named Gabrielle from Chanel "
           className=" max-[639px]:rounded-t-lg h-full sm:rounded-l-lg md:rounded-l-lg lg:rounded-l-lg xl:rounded-l-lg xl2:rounded-l-lg"
           src={cardMobile}
         />
@@ -37,7 +38,7 @@ function App() {
             className="w-40 text-white flex justify-center mt-2.5"
             onClick={handleClick}
           >
-            <img className="text-center h-6 mr-4" src={iconCart} />
+            <img alt='Icon of a cart' className="text-center h-6 mr-4" src={iconCart} />
             <p className="font-semibold">Add to Cart</p>
           </button>
         </div>
