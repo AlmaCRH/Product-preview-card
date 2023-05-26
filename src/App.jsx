@@ -38,13 +38,9 @@ function App() {
             <h1 className="text-emerald-900 font-bold text-2xl">$149.99</h1>
             <p className="text-grayish-blue line-through text-xs">$169.99</p>
           </div>
-        </div>
-        <div
-          role="button"
-          className="bg-emerald-800 hover:bg-emerald-700 flex justify-center rounded-lg h-11 font-Montserrat "
-        >
+        </div>  
           <button
-            className="w-40 text-white flex justify-center mt-2.5"
+            className="w-40 text-white mt-2.5 bg-emerald-800 hover:bg-emerald-700 flex justify-center rounded-lg h-11 font-Montserrat "
             onClick={handleClick}
           >
             <img
@@ -54,7 +50,6 @@ function App() {
             />
             <p className="font-semibold">Add to Cart</p>
           </button>
-        </div>
       </div>
     </container>
   );
