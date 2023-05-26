@@ -8,16 +8,16 @@ function App() {
   };
 
   return (
-    <container role='card' className="container grid grid-cols-1 mx-auto min-w-100 max-w-screen-xl sm:grid-cols-2 ">
-      <div>
+    <container role='banner' className="container grid grid-cols-1 mx-auto min-w-100 max-w-screen-xl sm:grid-cols-2 ">
+      <div role="img">
         <img
         alt="Image of a perfume named Gabrielle from Chanel "
           className=" max-[639px]:rounded-t-lg h-full sm:rounded-l-lg md:rounded-l-lg lg:rounded-l-lg xl:rounded-l-lg xl2:rounded-l-lg"
           src={cardMobile}
         />
       </div>
-      <div className="bg-white p-7 max-[639px]:rounded-b-lg sm:rounded-r-lg md:rounded-r-lg lg:rounded-r-lg xl:rounded-r-lg xl2:rounded-r-lg ">
-        <div className="text-left">
+      <div role='contentinfo' className="bg-white p-7 max-[639px]:rounded-b-lg sm:rounded-r-lg md:rounded-r-lg lg:rounded-r-lg xl:rounded-r-lg xl2:rounded-r-lg ">
+        <div role='article'className="text-left">
           <p className="tracking-[8px] text-grayish-blue font-Montserrat">
             PERFUME
           </p>
@@ -33,7 +33,7 @@ function App() {
             <p className="text-grayish-blue line-through text-xs">$169.99</p>
           </div>
         </div>
-        <div className="bg-emerald-800 hover:bg-emerald-700 flex justify-center rounded-lg h-11 font-Montserrat ">
+        <div role='button' className="bg-emerald-800 hover:bg-emerald-700 flex justify-center rounded-lg h-11 font-Montserrat ">
           <button
             className="w-40 text-white flex justify-center mt-2.5"
             onClick={handleClick}
